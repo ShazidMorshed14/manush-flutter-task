@@ -4,6 +4,17 @@ const { generateUniqueId } = require("../utils");
 const signin = async (req, res) => {
   try {
     const { identifier, password } = req.body;
+ 
+    if(!identifier){
+      return res.status(400).json({ message: "identifier not found!Please send raw json" });
+    
+    }
+
+   if(!password){
+      return res.status(400).json({ message: "password not found!Please send raw json" });
+    
+    }
+
 
     let isAuthenticated = false;
 
