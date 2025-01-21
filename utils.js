@@ -253,7 +253,7 @@ const productsList = [
     promotion: null,
   },
   {
-    id: 16,
+    id: 17,
     uid: "JCMlSRKuVL",
     title: "Potatos",
     sku: "Potatos PCH",
